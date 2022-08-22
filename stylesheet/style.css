@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@media (min-width:375px) {
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    font-family: outfit;
+    
+}
+.attribution{
+     padding:25px 0 0 38px; 
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.box{
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 500px;
+    display: block;
+    padding: 20px; 
+    border-radius: 10px;
+}
+.imagebox{
+  position: relative;
+}
+.equ{
+    width: 260px;
+    border-radius: 7px;
+}
+.attribution .imagebox div{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 98%;
+  z-index: 90;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.imagebox div img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    
+}
+.attribution .imagebox div:hover{
+  background-color: rgba(0, 255, 255, 0.5);
+  opacity: 1;
+  
+}
+#conbox{
+    padding: 2px;
+    position: relative;
+}
+#conbox h4{
+    color: hsl(0, 0%, 100%);
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+#conbox h4:hover{
+    color: cyan;
+    cursor: pointer;
+}
+#conbox p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+#conbox span{
+    font-weight: 400;
+}
+#eth{
+    color: hsl(178, 100%, 50%);
+}
+#days{
+    color: hsl(215, 51%, 70%);
+}
+#creation{
+    color:hsl(215, 51%, 70%);
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+}
+#name{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: flex-end;
+    margin-left: 3px;
+}
+#conlast{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+}
+#name:hover{
+    color: cyan;
+    cursor: pointer;
+}
+
+#eth img{
+    width: 10px;
+    margin-bottom: -2px;
+}
+#days{
+    margin-left: 73px;
+    
+}
+#days img{
+    width: 15px;
+    margin-bottom: -2px;
+}
+#ava{
+    width: 25px;
+    border:1px solid white;
+    border-radius: 50px;
+    margin-bottom: -5px;
+}
+hr{
+    background-color: hsl(215, 51%, 70%);
+}
+#footer{
+  position: absolute;
+  top: 534px;
+  right:10px;
+  color: white;
+}
+}
+  @media (min-width:500px) {
+    body{
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      margin: 0 auto;
+    }
+  .attribution{
+    padding-top: 60px;
+  }
+  #footer{
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 580px;
+    right: 48px;
+    
+}
+  }
+@media (min-width:1024px){
+    body{
+      overflow: hidden;
+    }
+    .attribution{
+     padding-top:60px;
+    }
+    #footer{
+      top: 580px;
+      left: 530px;
+    }
+}
+@media (min-width:1440px){
+    body{
+      overflow: hidden;
+    }
+    .attribution{
+     padding-top:100px;
+    }
+    #footer{
+      top: 620px;
+      left: 560px;
+    }
+}
